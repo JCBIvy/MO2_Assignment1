@@ -70,16 +70,15 @@ class Main
     //test out the class
     public static void main(String []args)
     {
+        //clarify date format
+        System.out.println("Dates are given in YYYY/(M)M/(D)D format");
+
         //test noArgs constructor
         MyDate date1 = new MyDate();
-        System.out.println(date1.getYear());
-        System.out.println(date1.getMonth());
-        System.out.println(date1.getDay());
+        System.out.println(date1.getYear()+"/"+date1.getMonth()+"/"+date1.getDay());
         
         //test time elapsed constructor
         MyDate date2 = new MyDate(34355555133101L);
-        System.out.println(date2.getYear());
-        System.out.println(date2.getMonth());
-        System.out.println(date2.getDay());
+        System.out.println(date2.getYear()+"/"+date2.getMonth()+"/"+date2.getDay());
     }
 };
